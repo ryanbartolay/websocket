@@ -26,7 +26,7 @@ public class CustomEndPoint {
 				while(true)
 				{
 					double d=2+Math.random();     
-					if(queue!=null)
+					if(queue.size() > 0)
 						sendAll("USD Rate: "+df.format(d));    
 					try {
 						sleep(2000);
